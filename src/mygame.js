@@ -20,12 +20,12 @@ class MyGame extends Phaser.Scene
         let width=700;
          // let height=750; 
             
-         for(let m=0; m<this.count;m++){
+         for( m=0; m<this.count;m++){
           
              x=width/this.count;
              y+=x;
 
-             for(let n=0;n<this.count;n++){
+             for( n=0;n<this.count;n++){
               
               //  this.container = this.add.container(x, y);
 //this.container=this.add.container(x*n,y[ this.add.graphics({ fillStyle: { color: 0xffffff,top:'10',align:'top'} }),this.add.text(x*n,y,Phaser.Math.Between(-9,9),{color:' #000000', fontSize: "40px",align:'top' })]);
@@ -33,7 +33,7 @@ class MyGame extends Phaser.Scene
                 let circle = new Phaser.Geom.Circle(x*n, y, 5);
               
                  graphics.fillCircleShape(circle);
-               // circle.setOrigin(3,3);
+               // circle.setOrigin(2,0);
                let text  = this.add.text(x*n,y,Phaser.Math.Between(-9,9),{color:' #000000', fontSize: "40px",align:'top' });
                 text.setOrigin(0, 1);
                // this.container.add([circle, text,graphics]);
